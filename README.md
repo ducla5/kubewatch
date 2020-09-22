@@ -24,6 +24,7 @@ supported webhooks:
  - flock
  - webhook
  - smtp
+ - chatwork
 
 Usage:
   kubewatch [flags]
@@ -316,6 +317,10 @@ handler:
   flock:
     url: ""
   webhook:
+    url: ""
+  chatwork:
+    token: ""
+    room: ""
     url: ""
 resource:
   deployment: false

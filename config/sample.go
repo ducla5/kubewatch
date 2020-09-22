@@ -54,6 +54,13 @@ handler:
     requireTLS: false
     # SMTP hello field (optional)
     hello: ""
+  chatwork:
+    # Chatwork token.
+    token: ""
+    # Room id.
+    room: ""
+    # URL of the chatwork server.
+    url: ""
 # Resources to watch.
 resource:
   deployment: false
