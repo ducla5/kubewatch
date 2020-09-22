@@ -25,6 +25,7 @@ require (
 	github.com/spf13/viper v1.0.0
 	github.com/stretchr/testify v1.6.1 // indirect
 	github.com/tbruyelle/hipchat-go v0.0.0-20160921153256-749fb9e14beb
+	github.com/yoppi/go-chatwork v0.0.0-20170105004039-f37a46ef7c04
 	golang.org/x/net v0.0.0-20200520004742-59133d7f0dd7 // indirect
 	golang.org/x/sys v0.0.0-20200519105757-fe76b779f299 // indirect
 	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect

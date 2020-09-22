@@ -44,6 +44,7 @@ type Handler struct {
 	Webhook    Webhook    `json:"webhook"`
 	MSTeams    MSTeams    `json:"msteams"`
 	SMTP       SMTP       `json:"smtp"`
+	Chatwork   Chatwork   `json:"chatwork"`
 }
 
 // Resource contains resource configuration
@@ -154,6 +155,16 @@ type SMTPAuth struct {
 	Identity string `json:"identity" yaml:"identity,omitempty"`
 	// Secret for CRAM-MD5 auth mechanism
 	Secret string `json:"secret" yaml:"secret,omitempty"`
+}
+
+// Hipchat contains hipchat configuration
+type Chatwork struct {
+	// Chatwork token.
+	Token string `json:"token"`
+	// Chatwork room.
+	Room string `json:"room"`
+	// URL of the hipchat server.
+	Url string `json:"url"`
 }
 
 // New creates new config object
