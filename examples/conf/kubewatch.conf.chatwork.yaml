@@ -1,0 +1,15 @@
+handler:
+  chatwork:
+    token: "token"
+    room: "room_id"
+    url: "https://api.chatwork.com/v2"
+resource:
+  deployment: true
+  replicationcontroller: false
+  replicaset: false
+  daemonset: false
+  services: false
+  pod: false
+  job: false
+  persistentvolume: false
+  ingress: false

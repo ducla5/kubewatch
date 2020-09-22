@@ -17,6 +17,7 @@ limitations under the License.
 package client
 
 import (
+	"github.com/bitnami-labs/kubewatch/pkg/handlers/chatwork"
 	"log"
 
 	"github.com/bitnami-labs/kubewatch/config"
@@ -57,6 +58,8 @@ func ParseEventHandler(conf *config.Config) handlers.Handler {
 		eventHandler = new(msteam.MSTeams)
 	case len(conf.Handler.SMTP.Smarthost) > 0 || len(conf.Handler.SMTP.To) > 0:
 		eventHandler = new(smtp.SMTP)
+	case len(conf.Handler.Chatwork.Room) > 0 || len(conf.Handler.Chatwork.Token) > 0:
+		eventHandler = new(chatwork.Chatwork)
 	default:
 		eventHandler = new(handlers.Default)
 	}
